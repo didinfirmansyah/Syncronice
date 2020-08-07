@@ -21,8 +21,6 @@ class ViewController: UIViewController {
         self.view.layer.insertSublayer(gradient, at: 0)
         
     }
-    
-
 
 }
 

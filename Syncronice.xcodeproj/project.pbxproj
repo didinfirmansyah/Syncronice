@@ -14,6 +14,7 @@
 		2B08769F24DA9F3800F1B7B5 /* Syncronice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2B08769D24DA9F3800F1B7B5 /* Syncronice.xcdatamodeld */; };
 		2B0876A124DA9F3A00F1B7B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0876A024DA9F3A00F1B7B5 /* Assets.xcassets */; };
 		2B0876A424DA9F3A00F1B7B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0876A224DA9F3A00F1B7B5 /* LaunchScreen.storyboard */; };
+		7BB1519924DD961900B6A46E /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB1519824DD961900B6A46E /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2B0876A024DA9F3A00F1B7B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B0876A324DA9F3A00F1B7B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B0876A524DA9F3A00F1B7B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BB1519824DD961900B6A46E /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				2B08769424DA9F3800F1B7B5 /* AppDelegate.swift */,
 				2B08769624DA9F3800F1B7B5 /* SceneDelegate.swift */,
 				2B08769824DA9F3800F1B7B5 /* ViewController.swift */,
+				7BB1519824DD961900B6A46E /* ViewController2.swift */,
 				2B08769A24DA9F3800F1B7B5 /* Main.storyboard */,
 				2B0876A024DA9F3A00F1B7B5 /* Assets.xcassets */,
 				2B0876A224DA9F3A00F1B7B5 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BB1519924DD961900B6A46E /* ViewController2.swift in Sources */,
 				2B08769F24DA9F3800F1B7B5 /* Syncronice.xcdatamodeld in Sources */,
 				2B08769924DA9F3800F1B7B5 /* ViewController.swift in Sources */,
 				2B08769524DA9F3800F1B7B5 /* AppDelegate.swift in Sources */,

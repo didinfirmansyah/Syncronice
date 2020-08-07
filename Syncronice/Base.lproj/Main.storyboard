@@ -15,20 +15,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image2" translatesAutoresizingMaskIntoConstraints="NO" id="SAi-ej-oTj">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Vj-ei-mWw">
+                                <rect key="frame" x="185" y="433.5" width="44" height="29"/>
+                                <state key="normal" image="Image4">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
+                                </state>
+                                <connections>
+                                    <segue destination="g0r-On-JWE" kind="presentation" modalPresentationStyle="fullScreen" id="ezp-XM-wEb"/>
+                                </connections>
+                            </button>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="9Vj-ei-mWw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5IO-TI-8Yh"/>
+                            <constraint firstItem="9Vj-ei-mWw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HPS-i7-CTH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="M5V-Ju-6f3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="134"/>
+            <point key="canvasLocation" x="625" y="145"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="h9j-aN-W3a">
+            <objects>
+                <viewController id="g0r-On-JWE" customClass="ViewController2" customModule="Syncronice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MrV-T2-AAi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EiV-sf-7WE">
+                                <rect key="frame" x="34" y="64" width="64" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Image3">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="sPg-en-uTs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hIX-OF-gRi"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bdO-2l-Wfx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QI9-M5-ZIa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1428.985507246377" y="147.99107142857142"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Image2" width="124" height="133"/>
+        <image name="Image3" width="51" height="43"/>
+        <image name="Image4" width="44" height="29"/>
     </resources>
 </document>
