@@ -24,6 +24,11 @@
                                     <segue destination="g0r-On-JWE" kind="presentation" modalPresentationStyle="fullScreen" id="ezp-XM-wEb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKz-6B-IOB">
+                                <rect key="frame" x="184" y="231" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="tombol"/>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="9Vj-ei-mWw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5IO-TI-8Yh"/>
