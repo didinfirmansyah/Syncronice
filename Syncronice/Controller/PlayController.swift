@@ -1,21 +1,22 @@
 //
-//  MainController.swift
+//  PlayController.swift
 //  Syncronice
 //
-//  Created by Aldowan Apta Premala on 10/08/20.
+//  Created by Aldowan Apta Premala on 11/08/20.
 //  Copyright © 2020 Didin Firmansyah. All rights reserved.
 //
 
 import UIKit
 
-class MainController: UIViewController {
+class PlayController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.view.backgroundColor = UIColor.init(rgb: 0xFAFFF0)
         
+        self.view.backgroundColor = UIColor.green
+
     }
     
+
 
 }
