@@ -20,13 +20,13 @@ class HomeController: UIViewController {
 
         self.view.backgroundColor = UIColor.init(rgb: 0xFAFFF0)
         
-        //self.homeView.thirdImage.addGestureRecognizer()(self, action: #selector(ButtonPressed), for: .touchUpInside)
-        
+        self.homeView.thirdButton.addTarget(self, action: #selector(ButtonPressed), for: .touchUpInside)
+
     }
     
-//    @objc private func ButtonPressed(){
-//        present(PlayController(), animated: true, completion: nil)
-//    }
+    @objc private func ButtonPressed(){
+        present(PlayController(), animated: true, completion: nil)
+    }
 
 
 }

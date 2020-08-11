@@ -9,12 +9,26 @@
 import UIKit
 
 class PlayController: UIViewController {
+    
+    private var playView: PlayView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.green
+        self.playView = PlayView(frame: self.view.frame)
+        self.view = self.playView
+        
+        let gradient = CAGradientLayer()
+        gradient.frame = view.bounds
+        gradient.colors = [UIColor.init(rgb: 0x2E8177).cgColor, UIColor.init(rgb: 0x0C5353).cgColor, UIColor.init(rgb: 0x004347).cgColor]
+        self.view.layer.insertSublayer(gradient, at: 0)
+        
+        self.playView.mainButton.addTarget(self, action: #selector(ButtonPressed), for: .touchUpInside)
 
+    }
+    
+    @objc private func ButtonPressed(){
+        present(HomeController(), animated: true, completion: nil)
     }
     
 

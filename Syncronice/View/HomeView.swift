@@ -56,12 +56,11 @@ class HomeView: UIView {
         label.textColor = UIColor.init(rgb: 0x2E8177)
         return label
     }()
-    
-    let thirdImage: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = UIImage(named: "Image7")
-        imageView.contentMode = .scaleToFill
-        return imageView
+        
+    let thirdButton: UIButton = {
+        let button = UIButton(type: UIButton.ButtonType.system)
+        button.setImage(UIImage(named: "image7"), for: .normal)
+        return button
     }()
     
     let thirdText: UILabel = {
@@ -102,7 +101,7 @@ class HomeView: UIView {
         self.addSubview(firstText)
         self.addSubview(secondImage)
         self.addSubview(secondText)
-        self.addSubview(thirdImage)
+        self.addSubview(thirdButton)
         self.addSubview(thirdText)
         self.addSubview(fourthImage)
         self.addSubview(fourthText)
@@ -138,19 +137,19 @@ class HomeView: UIView {
             make.left.equalTo(self).offset(235)
         }
         
-        self.thirdImage.snp.makeConstraints { (make) in
+        self.thirdButton.snp.makeConstraints { (make) in
             make.top.equalTo(self.firstText.snp.bottom).offset(50)
             make.left.equalTo(self).offset(50)
         }
         
         self.thirdText.snp.makeConstraints { (make) in
-            make.top.equalTo(self.thirdImage.snp.bottom).offset(0)
+            make.top.equalTo(self.thirdButton.snp.bottom).offset(0)
             make.left.equalTo(self).offset(60)
         }
         
         self.fourthImage.snp.makeConstraints { (make) in
             make.top.equalTo(self.secondText.snp.bottom).offset(50)
-            make.left.equalTo(self.thirdImage.snp.right).offset(30)
+            make.left.equalTo(self.thirdButton.snp.right).offset(30)
         }
         
         self.fourthText.snp.makeConstraints { (make) in
