@@ -25,7 +25,10 @@ class HomeController: UIViewController {
     }
     
     @objc private func ButtonPressed(){
-        present(PlayController(), animated: true, completion: nil)
+        
+        let controller = PlayController()
+        controller.modalPresentationStyle = .fullScreen
+        present(controller, animated: true, completion: nil)
     }
 
 

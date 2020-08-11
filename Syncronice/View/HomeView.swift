@@ -59,7 +59,9 @@ class HomeView: UIView {
         
     let thirdButton: UIButton = {
         let button = UIButton(type: UIButton.ButtonType.system)
-        button.setImage(UIImage(named: "image7"), for: .normal)
+        button.setImage(UIImage(named: "Image7")?.withRenderingMode(.alwaysOriginal), for: .normal)
+        //print(UIImage(named: "Hold Button"))
+        //button.backgroundColor = .blue
         return button
     }()
     
@@ -73,7 +75,7 @@ class HomeView: UIView {
 
     let fourthImage: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = UIImage(named: "Image8")
+        imageView.image = UIImage(named: "Image5")
         imageView.contentMode = .scaleToFill
         return imageView
     }()

@@ -12,8 +12,10 @@ import SnapKit
 class PlayView: UIView {
     
     let homeButton: UIButton = {
-        let button = UIButton(type: UIButton.ButtonType.system)
-        button.setImage(UIImage(named: "image3"), for: .normal)
+        let button = UIButton()
+        button.setImage(UIImage(named: "Image3"), for: .normal)
+        //button.setBackgroundImage(UIImage(named: "Image3"), for: .normal)
+        print(UIImage(named: "Image3"))
         return button
     }()
     
@@ -41,6 +43,7 @@ class PlayView: UIView {
         self.homeButton.snp.makeConstraints { (make) in
             make.top.equalTo(self).offset(50)
             make.left.equalTo(self).offset(50)
+            make.size.equalTo(CGSize(width: 100, height: 100))
         }
         
         self.mainButton.snp.makeConstraints { (make) in

@@ -28,7 +28,9 @@ class PlayController: UIViewController {
     }
     
     @objc private func ButtonPressed(){
-        present(HomeController(), animated: true, completion: nil)
+        
+        self.dismiss(animated: true, completion: nil)
+        
     }
     
 
