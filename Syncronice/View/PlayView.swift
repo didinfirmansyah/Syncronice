@@ -15,7 +15,7 @@ class PlayView: UIView {
         let button = UIButton()
         button.setImage(UIImage(named: "Image3"), for: .normal)
         //button.setBackgroundImage(UIImage(named: "Image3"), for: .normal)
-        print(UIImage(named: "Image3"))
+        //print(UIImage(named: "Image3"))
         return button
     }()
     
