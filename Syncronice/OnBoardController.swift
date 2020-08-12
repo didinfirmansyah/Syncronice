@@ -8,7 +8,7 @@
 
 import UIKit
  
-class ViewController: UIViewController {
+class OnBoardController: UIViewController {
     
     // init image
     let imageIll: UIImageView = {
@@ -67,7 +67,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         //Background
-        view.backgroundColor = UIColor(red: 250, green: 255, blue: 240, alpha: 100)
+        view.backgroundColor = UIColor.init(rgb: 0xFAFFF0)
 
 
         //show Title
@@ -123,7 +123,7 @@ class ViewController: UIViewController {
          ])
         //title layout
         NSLayoutConstraint.activate([
-            appName.topAnchor.constraint(equalTo: safearea.topAnchor, constant: 30),
+            appName.topAnchor.constraint(equalTo: safearea.topAnchor, constant: 150),
             appName.centerXAnchor.constraint(equalTo: view.centerXAnchor),
         ])
         //sub layout
