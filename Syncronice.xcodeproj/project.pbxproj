@@ -18,6 +18,7 @@
 		7B19231724E1CA0000BAC7BA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B19231624E1CA0000BAC7BA /* HomeView.swift */; };
 		7B19231924E1E76600BAC7BA /* PlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B19231824E1E76600BAC7BA /* PlayController.swift */; };
 		7B19231B24E2B7D800BAC7BA /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B19231A24E2B7D800BAC7BA /* PlayView.swift */; };
+		7B19231E24E43A2800BAC7BA /* OnBoardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B19231D24E43A2800BAC7BA /* OnBoardController.swift */; };
 		7BB1519924DD961900B6A46E /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB1519824DD961900B6A46E /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		7B19231624E1CA0000BAC7BA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7B19231824E1E76600BAC7BA /* PlayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayController.swift; sourceTree = "<group>"; };
 		7B19231A24E2B7D800BAC7BA /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
+		7B19231D24E43A2800BAC7BA /* OnBoardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardController.swift; sourceTree = "<group>"; };
 		7BB1519824DD961900B6A46E /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		A3B598E6877B6F702704C05C /* Pods_Syncronice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Syncronice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -118,6 +120,7 @@
 			children = (
 				7B19231424E1981200BAC7BA /* HomeController.swift */,
 				7B19231824E1E76600BAC7BA /* PlayController.swift */,
+				7B19231D24E43A2800BAC7BA /* OnBoardController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				7B19231B24E2B7D800BAC7BA /* PlayView.swift in Sources */,
 				7B19231524E1981200BAC7BA /* HomeController.swift in Sources */,
 				2B08769724DA9F3800F1B7B5 /* SceneDelegate.swift in Sources */,
+				7B19231E24E43A2800BAC7BA /* OnBoardController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
