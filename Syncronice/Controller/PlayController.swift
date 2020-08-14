@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 class PlayController: UIViewController {
     
     private var playView: PlayView!
+    
+    var player: AVAudioPlayer?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +27,8 @@ class PlayController: UIViewController {
         self.view.layer.insertSublayer(gradient, at: 0)
         
         self.playView.backButton.addTarget(self, action: #selector(ButtonPressed), for: .touchUpInside)
+        
+        self.playView.playButton.addTarget(self, action: #selector(ButtonPressed2), for: .touchUpInside)
 
     }
     
@@ -33,6 +38,31 @@ class PlayController: UIViewController {
         
     }
     
+    @objc private func ButtonPressed2(){
+        
+        playSound()
+    }
+    
+    func playSound() {
+        guard let url = Bundle.main.url(forResource: "100ms", withExtension: "wav") else { return }
 
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
 
+            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            /* iOS 10 and earlier require the following line:
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileTypeMPEGLayer3) */
+
+            guard let player = player else { return }
+
+            player.play()
+
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
 }

@@ -21,6 +21,7 @@
 		7B19231B24E2B7D800BAC7BA /* PlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B19231A24E2B7D800BAC7BA /* PlayView.swift */; };
 		7B19232024E6445900BAC7BA /* InstructionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B19231F24E6445900BAC7BA /* InstructionController.swift */; };
 		7B19232224E644D100BAC7BA /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B19232124E644D100BAC7BA /* InstructionView.swift */; };
+		7B19232724E687E800BAC7BA /* 100ms.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7B19232624E687E800BAC7BA /* 100ms.wav */; };
 		7BB1519924DD961900B6A46E /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB1519824DD961900B6A46E /* ViewController2.swift */; };
 		F232D01FD5D8AEFCD8FC1729 /* Pods_Syncronice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D3361867B0DB1CD1243873 /* Pods_Syncronice.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,7 @@
 		7B19231A24E2B7D800BAC7BA /* PlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayView.swift; sourceTree = "<group>"; };
 		7B19231F24E6445900BAC7BA /* InstructionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionController.swift; sourceTree = "<group>"; };
 		7B19232124E644D100BAC7BA /* InstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
+		7B19232624E687E800BAC7BA /* 100ms.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 100ms.wav; sourceTree = "<group>"; };
 		7BB1519824DD961900B6A46E /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		967575A43E66590EB61FCE07 /* Pods-Syncronice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Syncronice.debug.xcconfig"; path = "Target Support Files/Pods-Syncronice/Pods-Syncronice.debug.xcconfig"; sourceTree = "<group>"; };
 		A8A0797AC4C9A4A0F1D1E956 /* Pods-Syncronice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Syncronice.release.xcconfig"; path = "Target Support Files/Pods-Syncronice/Pods-Syncronice.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				7B19231324E1978700BAC7BA /* Controller */,
 				2B08769824DA9F3800F1B7B5 /* ViewController.swift */,
 				7BB1519824DD961900B6A46E /* ViewController2.swift */,
+				7B19232324E6856300BAC7BA /* Sounds */,
 				2B0876A024DA9F3A00F1B7B5 /* Assets.xcassets */,
 				2B0876A224DA9F3A00F1B7B5 /* LaunchScreen.storyboard */,
 				2B0876A524DA9F3A00F1B7B5 /* Info.plist */,
@@ -132,6 +135,14 @@
 				7B19231824E1E76600BAC7BA /* PlayController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		7B19232324E6856300BAC7BA /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				7B19232624E687E800BAC7BA /* 100ms.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		CF80C859AE5BBEF04270DAFC /* Frameworks */ = {
@@ -202,6 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B19232724E687E800BAC7BA /* 100ms.wav in Resources */,
 				2B0876A424DA9F3A00F1B7B5 /* LaunchScreen.storyboard in Resources */,
 				2B0876A124DA9F3A00F1B7B5 /* Assets.xcassets in Resources */,
 			);
