@@ -100,7 +100,7 @@ class HomeView: UIView {
 //        return label
 //    }()
     // instruksi button
-    let historyButton: UIButton = {
+    let instructionButton: UIButton = {
         let history = UIButton()
         history.setImage(UIImage(systemName: "questionmark.square.fill"), for: .normal)
         history.tintColor = UIColor.init(rgb: 0x004347)
@@ -158,7 +158,7 @@ class HomeView: UIView {
     func setup(){
         
         self.addSubview(titleText)
-        self.addSubview(historyButton)
+        self.addSubview(instructionButton)
         //history container
         self.addSubview(Container)
         self.addSubview(Categories)
@@ -183,7 +183,7 @@ class HomeView: UIView {
             make.leading.equalTo(self).offset(45)
         }
         //history
-        self.historyButton.snp.makeConstraints { (make) in
+        self.instructionButton.snp.makeConstraints { (make) in
             make.top.equalTo(safeAreaLayoutGuide).offset(30)
             make.trailing.equalTo(self).offset(-50)
         }

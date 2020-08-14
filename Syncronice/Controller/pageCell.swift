@@ -36,7 +36,8 @@ class pageCell: UICollectionViewCell {
     // init cell
     override init(frame: CGRect) {
         super.init(frame: frame)
-        backgroundColor = UIColor(red: 250, green: 255, blue: 240, alpha: 100)
+        //backgroundColor = UIColor(red: 250, green: 255, blue: 240, alpha: 100)
+        self.backgroundColor = UIColor.init(rgb: 0xFAFFF0)
         layout()
 //        indicator.translatesAutoresizingMaskIntoConstraints = false
     }
@@ -65,7 +66,7 @@ class pageCell: UICollectionViewCell {
 //        //sub layout
         addSubview(desc)
         NSLayoutConstraint.activate([
-            desc.topAnchor.constraint(equalTo: imageIll.bottomAnchor, constant: 20),
+            desc.topAnchor.constraint(equalTo: imageIll.bottomAnchor, constant: 50),
             desc.centerXAnchor.constraint(equalTo: centerXAnchor)
         ])
 //        // container layout

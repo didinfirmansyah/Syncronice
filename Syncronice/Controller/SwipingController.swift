@@ -142,7 +142,7 @@ class SwipingController: UIViewController, UICollectionViewDataSource {
         //title layout
         view.addSubview(appName)
         NSLayoutConstraint.activate([
-            appName.topAnchor.constraint(equalTo: safearea.topAnchor, constant: 30),
+            appName.topAnchor.constraint(equalTo: safearea.topAnchor, constant: 150),
             appName.centerXAnchor.constraint(equalTo: view.centerXAnchor),
         ])
 //        // indicator layout

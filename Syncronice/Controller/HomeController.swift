@@ -21,6 +21,8 @@ class HomeController: UIViewController {
         self.view.backgroundColor = UIColor.init(rgb: 0xFAFFF0)
         
         self.homeView.thirdButton.addTarget(self, action: #selector(ButtonPressed), for: .touchUpInside)
+        
+        self.homeView.instructionButton.addTarget(self, action: #selector(ButtonPressed2), for: .touchUpInside)
 
     }
     
@@ -30,6 +32,14 @@ class HomeController: UIViewController {
         controller.modalPresentationStyle = .fullScreen
         present(controller, animated: true, completion: nil)
     }
+    
+    @objc private func ButtonPressed2(){
+        
+        let controller = InstructionController()
+        controller.modalPresentationStyle = .fullScreen
+        present(controller, animated: true, completion: nil)
+    }
+
 
 
 }

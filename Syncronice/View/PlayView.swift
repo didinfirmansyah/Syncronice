@@ -11,19 +11,37 @@ import SnapKit
 
 class PlayView: UIView {
     
-    let homeButton: UIButton = {
+    let backButton: UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(named: "Image3"), for: .normal)
+        button.setImage(UIImage(named: "Back"), for: .normal)
         //button.setBackgroundImage(UIImage(named: "Image3"), for: .normal)
         //print(UIImage(named: "Image3"))
         return button
     }()
     
-    let mainButton: UIButton = {
-        let button = UIButton(type: UIButton.ButtonType.system)
-        button.setTitle("Move", for: .normal)
-        button.backgroundColor = UIColor(red: 147/255, green: 16/255, blue: 216/255, alpha: 1)
-        button.setTitleColor(.white, for: .normal)
+    let playButton: UIButton = {
+        let button = UIButton()
+        button.setImage(UIImage(named: "Play"), for: .normal)
+        return button
+    }()
+
+    let selectionText: UILabel = {
+        let label = UILabel()
+        label.text = "Choose you answer"
+        label.font = UIFont.systemFont(ofSize: 18)
+        label.textColor = UIColor.init(rgb: 0xFAFFF0)
+        return label
+    }()
+    
+    let syncButton: UIButton = {
+        let button = UIButton()
+        button.setImage(UIImage(named: "Sync"), for: .normal)
+        return button
+    }()
+    
+    let delayButton: UIButton = {
+        let button = UIButton()
+        button.setImage(UIImage(named: "Delay"), for: .normal)
         return button
     }()
 
@@ -37,18 +55,37 @@ class PlayView: UIView {
     
     func setup(){
         
-        self.addSubview(homeButton)
-        self.addSubview(mainButton)
+        self.addSubview(backButton)
+        self.addSubview(playButton)
+        self.addSubview(selectionText)
+        self.addSubview(syncButton)
+        self.addSubview(delayButton)
         
-        self.homeButton.snp.makeConstraints { (make) in
+        
+        self.backButton.snp.makeConstraints { (make) in
             make.top.equalTo(self).offset(50)
-            make.left.equalTo(self).offset(50)
-            make.size.equalTo(CGSize(width: 100, height: 100))
+            make.left.equalTo(self).offset(30)
+            //make.size.equalTo(CGSize(width: 100, height: 100))
         }
         
-        self.mainButton.snp.makeConstraints { (make) in
-            make.top.equalTo(self).offset(200)
-            make.left.equalTo(self).offset(200)
+        self.playButton.snp.makeConstraints { (make) in
+            make.top.equalTo(self).offset(300)
+            make.centerX.equalTo(self)
+        }
+        
+        self.selectionText.snp.makeConstraints { (make) in
+            make.top.equalTo(self.playButton.snp.bottom).offset(50)
+            make.centerX.equalTo(self)
+        }
+        
+        self.syncButton.snp.makeConstraints { (make) in
+            make.top.equalTo(self.selectionText.snp.bottom).offset(50)
+            make.left.equalTo(self).offset(100)
+        }
+        
+        self.delayButton.snp.makeConstraints { (make) in
+            make.top.equalTo(self.selectionText.snp.bottom).offset(50)
+            make.right.equalTo(self).offset(-100)
         }
 
         

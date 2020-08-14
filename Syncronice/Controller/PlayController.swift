@@ -23,7 +23,7 @@ class PlayController: UIViewController {
         gradient.colors = [UIColor.init(rgb: 0x2E8177).cgColor, UIColor.init(rgb: 0x0C5353).cgColor, UIColor.init(rgb: 0x004347).cgColor]
         self.view.layer.insertSublayer(gradient, at: 0)
         
-        self.playView.mainButton.addTarget(self, action: #selector(ButtonPressed), for: .touchUpInside)
+        self.playView.backButton.addTarget(self, action: #selector(ButtonPressed), for: .touchUpInside)
 
     }
     
