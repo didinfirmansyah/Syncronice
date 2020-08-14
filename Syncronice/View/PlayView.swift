@@ -69,8 +69,8 @@ class PlayView: UIView {
         }
         
         self.playButton.snp.makeConstraints { (make) in
-            make.top.equalTo(self).offset(300)
-            make.centerX.equalTo(self)
+            make.top.equalTo(safeAreaLayoutGuide).offset(200)
+            make.centerX.equalToSuperview()
         }
         
         self.selectionText.snp.makeConstraints { (make) in
@@ -79,13 +79,13 @@ class PlayView: UIView {
         }
         
         self.syncButton.snp.makeConstraints { (make) in
-            make.top.equalTo(self.selectionText.snp.bottom).offset(50)
-            make.left.equalTo(self).offset(100)
+            make.top.equalTo(self.selectionText.snp.bottom).offset(30)
+            make.leading.equalToSuperview().offset(60)
         }
         
         self.delayButton.snp.makeConstraints { (make) in
-            make.top.equalTo(self.selectionText.snp.bottom).offset(50)
-            make.right.equalTo(self).offset(-100)
+            make.top.equalTo(self.selectionText.snp.bottom).offset(30)
+            make.trailing.equalToSuperview().offset(-60)
         }
 
         

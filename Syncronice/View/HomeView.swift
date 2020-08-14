@@ -44,14 +44,6 @@ class HomeView: UIView {
         return imageView
     }()
     
-//    let firstText: UILabel = {
-//        let label = UILabel()
-//        label.text = "Sound Level"
-//        label.font = UIFont.systemFont(ofSize: 12)
-//        label.textColor = UIColor.init(rgb: 0x2E8177)
-//        return label
-//    }()
-
     let secondImage: UIButton = {
         let imageView = UIButton()
 //        imageView.image = UIImage(named: "Image6")
@@ -59,46 +51,18 @@ class HomeView: UIView {
         imageView.contentMode = .scaleToFill
         return imageView
     }()
-    
-//    let secondText: UILabel = {
-//        let label = UILabel()
-//        label.text = "Dynamic"
-//        label.font = UIFont.systemFont(ofSize: 12)
-//        label.textColor = UIColor.init(rgb: 0x2E8177)
-//        return label
-//    }()
-        
     let thirdButton: UIButton = {
         let button = UIButton(type: UIButton.ButtonType.system)
         button.setImage(UIImage(named: "newTiming")?.withRenderingMode(.alwaysOriginal), for: .normal)
-        //print(UIImage(named: "Hold Button"))
-        //button.backgroundColor = .blue
         return button
     }()
-    
-//    let thirdText: UILabel = {
-//        let label = UILabel()
-//        label.text = "Timing"
-//        label.font = UIFont.systemFont(ofSize: 12)
-//        label.textColor = UIColor.init(rgb: 0x2E8177)
-//        return label
-//    }()
 
     let fourthImage: UIButton = {
         let imageView = UIButton()
-//        imageView.image = UIImage(named: "Image5")
         imageView.setImage(UIImage(named: "newPitch")?.withRenderingMode(.alwaysOriginal), for: .normal)
         imageView.contentMode = .scaleToFill
         return imageView
     }()
-    
-//    let fourthText: UILabel = {
-//        let label = UILabel()
-//        label.text = "Pitch"
-//        label.font = UIFont.systemFont(ofSize: 12)
-//        label.textColor = UIColor.init(rgb: 0x2E8177)
-//        return label
-//    }()
     // instruksi button
     let instructionButton: UIButton = {
         let history = UIButton()
@@ -185,7 +149,7 @@ class HomeView: UIView {
         //history
         self.instructionButton.snp.makeConstraints { (make) in
             make.top.equalTo(safeAreaLayoutGuide).offset(30)
-            make.trailing.equalTo(self).offset(-50)
+            make.trailing.equalTo(self).offset(-30)
         }
         self.explanationText.snp.makeConstraints { (make) in
             make.top.equalTo(self.titleText.snp.bottom).offset(10)
@@ -227,30 +191,17 @@ class HomeView: UIView {
             make.leading.equalTo(self).offset(20)
         }
         
-//        self.firstText.snp.makeConstraints { (make) in
-//            make.top.equalTo(self.firstImage.snp.bottom).offset(0)
-//            make.leading.equalTo(self).offset(70)
-//        }
         
         self.secondImage.snp.makeConstraints { (make) in
             make.top.equalTo(self.Categories.snp.bottom).offset(-5)
             make.trailing.equalTo(self).offset(-20)
         }
         
-//        self.secondText.snp.makeConstraints { (make) in
-//            make.top.equalTo(self.secondImage.snp.bottom).offset(0)
-//            make.trailing.equalTo(self).offset(-80)
-//        }
-        
         self.thirdButton.snp.makeConstraints { (make) in
             make.top.equalTo(self.firstImage.snp.bottom).offset(10)
             make.leading.equalTo(self).offset(20)
         }
-        
-//        self.thirdText.snp.makeConstraints { (make) in
-//            make.top.equalTo(self.thirdButton.snp.bottom).offset(0)
-//            make.leading.equalTo(self).offset(85)
-//        }
+
         
         self.fourthImage.snp.makeConstraints { (make) in
             make.top.equalTo(self.secondImage.snp.bottom).offset(10)

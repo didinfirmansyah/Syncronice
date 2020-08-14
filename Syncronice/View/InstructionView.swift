@@ -48,17 +48,20 @@ class InstructionView: UIView {
         
         self.backButton.snp.makeConstraints { (make) in
             make.top.equalTo(self).offset(50)
-            make.left.equalTo(self).offset(30)
+            make.leading.equalTo(self).offset(30)
         }
         
         self.titleText.snp.makeConstraints { (make) in
-            make.top.equalTo(self).offset(250)
+            make.top.equalTo(safeAreaLayoutGuide).offset(50)
             make.centerX.equalTo(self)
         }
         
         self.instructionImage.snp.makeConstraints { (make) in
             //make.top.equalTo(self).offset(150)
-            make.centerX.centerY.equalTo(self)
+            make.centerX.equalToSuperview()
+            make.top.equalTo(titleText.snp.bottom).offset(30)
+            make.leading.equalToSuperview().offset(10)
+            make.trailing.equalToSuperview().offset(-10)
         }
         
     }
