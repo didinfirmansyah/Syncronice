@@ -34,8 +34,10 @@ class PlayController: UIViewController {
     
     @objc private func ButtonPressed(){
         
-        self.dismiss(animated: true, completion: nil)
-        
+        let controller = HomeController()
+        controller.modalPresentationStyle = .fullScreen
+        present(controller, animated: true, completion: nil)
+
     }
     
     @objc private func ButtonPressed2(){

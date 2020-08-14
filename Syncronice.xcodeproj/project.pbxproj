@@ -22,6 +22,8 @@
 		7B19232024E6445900BAC7BA /* InstructionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B19231F24E6445900BAC7BA /* InstructionController.swift */; };
 		7B19232224E644D100BAC7BA /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B19232124E644D100BAC7BA /* InstructionView.swift */; };
 		7B19232724E687E800BAC7BA /* 100ms.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7B19232624E687E800BAC7BA /* 100ms.wav */; };
+		7B19232924E697F100BAC7BA /* TimingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B19232824E697F100BAC7BA /* TimingController.swift */; };
+		7B19232B24E6981800BAC7BA /* TimingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B19232A24E6981800BAC7BA /* TimingView.swift */; };
 		7BB1519924DD961900B6A46E /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB1519824DD961900B6A46E /* ViewController2.swift */; };
 		F232D01FD5D8AEFCD8FC1729 /* Pods_Syncronice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D3361867B0DB1CD1243873 /* Pods_Syncronice.framework */; };
 /* End PBXBuildFile section */
@@ -45,6 +47,8 @@
 		7B19231F24E6445900BAC7BA /* InstructionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionController.swift; sourceTree = "<group>"; };
 		7B19232124E644D100BAC7BA /* InstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
 		7B19232624E687E800BAC7BA /* 100ms.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 100ms.wav; sourceTree = "<group>"; };
+		7B19232824E697F100BAC7BA /* TimingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingController.swift; sourceTree = "<group>"; };
+		7B19232A24E6981800BAC7BA /* TimingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingView.swift; sourceTree = "<group>"; };
 		7BB1519824DD961900B6A46E /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		967575A43E66590EB61FCE07 /* Pods-Syncronice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Syncronice.debug.xcconfig"; path = "Target Support Files/Pods-Syncronice/Pods-Syncronice.debug.xcconfig"; sourceTree = "<group>"; };
 		A8A0797AC4C9A4A0F1D1E956 /* Pods-Syncronice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Syncronice.release.xcconfig"; path = "Target Support Files/Pods-Syncronice/Pods-Syncronice.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 			children = (
 				7B19231624E1CA0000BAC7BA /* HomeView.swift */,
 				7B19232124E644D100BAC7BA /* InstructionView.swift */,
+				7B19232A24E6981800BAC7BA /* TimingView.swift */,
 				7B19231A24E2B7D800BAC7BA /* PlayView.swift */,
 			);
 			path = View;
@@ -132,6 +137,7 @@
 				2B3961F024E4F25B00528BC0 /* pageCell.swift */,
 				7B19231424E1981200BAC7BA /* HomeController.swift */,
 				7B19231F24E6445900BAC7BA /* InstructionController.swift */,
+				7B19232824E697F100BAC7BA /* TimingController.swift */,
 				7B19231824E1E76600BAC7BA /* PlayController.swift */,
 			);
 			path = Controller;
@@ -275,6 +281,8 @@
 				2B08769F24DA9F3800F1B7B5 /* Syncronice.xcdatamodeld in Sources */,
 				7B19232024E6445900BAC7BA /* InstructionController.swift in Sources */,
 				2B08769924DA9F3800F1B7B5 /* ViewController.swift in Sources */,
+				7B19232B24E6981800BAC7BA /* TimingView.swift in Sources */,
+				7B19232924E697F100BAC7BA /* TimingController.swift in Sources */,
 				2B08769524DA9F3800F1B7B5 /* AppDelegate.swift in Sources */,
 				7B19231B24E2B7D800BAC7BA /* PlayView.swift in Sources */,
 				7B19231524E1981200BAC7BA /* HomeController.swift in Sources */,
