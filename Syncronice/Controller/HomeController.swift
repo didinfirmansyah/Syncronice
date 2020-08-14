@@ -30,6 +30,7 @@ class HomeController: UIViewController {
         
         let controller = PlayController()
         controller.modalPresentationStyle = .fullScreen
+        controller.modalTransitionStyle = .crossDissolve
         present(controller, animated: true, completion: nil)
     }
     
@@ -37,6 +38,7 @@ class HomeController: UIViewController {
         
         let controller = InstructionController()
         controller.modalPresentationStyle = .fullScreen
+        controller.modalTransitionStyle = .crossDissolve
         present(controller, animated: true, completion: nil)
     }
 
