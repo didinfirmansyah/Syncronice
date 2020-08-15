@@ -56,9 +56,9 @@ class TimingView: UIView {
         return button
     }()
     
-    let rentang100Button: UIButton = {
+    let rentang50Button: UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(named: "Rentang100"), for: .normal)
+        button.setImage(UIImage(named: "Rentang50"), for: .normal)
         return button
     }()
 
@@ -79,7 +79,7 @@ class TimingView: UIView {
         self.addSubview(rentang5Button)
         self.addSubview(rentang10Button)
         self.addSubview(rentang20Button)
-        self.addSubview(rentang100Button)
+        self.addSubview(rentang50Button)
         
         self.titleText.snp.makeConstraints { (make) in
             make.top.equalTo(self).offset(200)
@@ -116,7 +116,7 @@ class TimingView: UIView {
             make.left.equalTo(self).offset(50)
         }
         
-        self.rentang100Button.snp.makeConstraints { (make) in
+        self.rentang50Button.snp.makeConstraints { (make) in
             make.top.equalTo(self.rentang5Button.snp.bottom).offset(50)
             make.right.equalTo(self).offset(-50)
         }

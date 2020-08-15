@@ -12,8 +12,12 @@ import AVFoundation
 class PlayController: UIViewController {
     
     private var playView: PlayView!
-    
+        
     var player: AVAudioPlayer?
+    
+    var sound = ["Timing1ms", "Timing2ms", "Timing5ms", "Timing10ms", "Timing20ms", "Timing50ms"]
+    
+    var number : Int!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,8 +50,8 @@ class PlayController: UIViewController {
     }
     
     func playSound() {
-        guard let url = Bundle.main.url(forResource: "100ms", withExtension: "wav") else { return }
-
+        guard let url = Bundle.main.url(forResource: sound[self.number], withExtension: "m4a") else { return }
+        //print(number!)
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
             try AVAudioSession.sharedInstance().setActive(true)

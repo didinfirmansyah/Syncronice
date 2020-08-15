@@ -24,6 +24,16 @@
 		7B19232724E687E800BAC7BA /* 100ms.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7B19232624E687E800BAC7BA /* 100ms.wav */; };
 		7B19232924E697F100BAC7BA /* TimingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B19232824E697F100BAC7BA /* TimingController.swift */; };
 		7B19232B24E6981800BAC7BA /* TimingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B19232A24E6981800BAC7BA /* TimingView.swift */; };
+		7B9CA9E624E75273005768FE /* 1ms.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7B9CA9E524E75273005768FE /* 1ms.wav */; };
+		7B9CA9E824E75286005768FE /* 0ms.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7B9CA9E724E75286005768FE /* 0ms.wav */; };
+		7B9CA9F124E7C34F005768FE /* Timing5ms.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7B9CA9E924E7C34E005768FE /* Timing5ms.m4a */; };
+		7B9CA9F224E7C34F005768FE /* Timing100ms.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7B9CA9EA24E7C34F005768FE /* Timing100ms.m4a */; };
+		7B9CA9F324E7C34F005768FE /* Timing2ms.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7B9CA9EB24E7C34F005768FE /* Timing2ms.m4a */; };
+		7B9CA9F424E7C34F005768FE /* Timing20ms.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7B9CA9EC24E7C34F005768FE /* Timing20ms.m4a */; };
+		7B9CA9F524E7C34F005768FE /* Timing1ms.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7B9CA9ED24E7C34F005768FE /* Timing1ms.m4a */; };
+		7B9CA9F624E7C34F005768FE /* Timing10ms.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7B9CA9EE24E7C34F005768FE /* Timing10ms.m4a */; };
+		7B9CA9F724E7C34F005768FE /* Timing0ms.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7B9CA9EF24E7C34F005768FE /* Timing0ms.m4a */; };
+		7B9CA9F824E7C34F005768FE /* Timing50ms.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7B9CA9F024E7C34F005768FE /* Timing50ms.m4a */; };
 		7BB1519924DD961900B6A46E /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB1519824DD961900B6A46E /* ViewController2.swift */; };
 		F232D01FD5D8AEFCD8FC1729 /* Pods_Syncronice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D3361867B0DB1CD1243873 /* Pods_Syncronice.framework */; };
 /* End PBXBuildFile section */
@@ -49,6 +59,16 @@
 		7B19232624E687E800BAC7BA /* 100ms.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 100ms.wav; sourceTree = "<group>"; };
 		7B19232824E697F100BAC7BA /* TimingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingController.swift; sourceTree = "<group>"; };
 		7B19232A24E6981800BAC7BA /* TimingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingView.swift; sourceTree = "<group>"; };
+		7B9CA9E524E75273005768FE /* 1ms.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 1ms.wav; sourceTree = "<group>"; };
+		7B9CA9E724E75286005768FE /* 0ms.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 0ms.wav; sourceTree = "<group>"; };
+		7B9CA9E924E7C34E005768FE /* Timing5ms.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Timing5ms.m4a; sourceTree = "<group>"; };
+		7B9CA9EA24E7C34F005768FE /* Timing100ms.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Timing100ms.m4a; sourceTree = "<group>"; };
+		7B9CA9EB24E7C34F005768FE /* Timing2ms.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Timing2ms.m4a; sourceTree = "<group>"; };
+		7B9CA9EC24E7C34F005768FE /* Timing20ms.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Timing20ms.m4a; sourceTree = "<group>"; };
+		7B9CA9ED24E7C34F005768FE /* Timing1ms.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Timing1ms.m4a; sourceTree = "<group>"; };
+		7B9CA9EE24E7C34F005768FE /* Timing10ms.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Timing10ms.m4a; sourceTree = "<group>"; };
+		7B9CA9EF24E7C34F005768FE /* Timing0ms.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Timing0ms.m4a; sourceTree = "<group>"; };
+		7B9CA9F024E7C34F005768FE /* Timing50ms.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Timing50ms.m4a; sourceTree = "<group>"; };
 		7BB1519824DD961900B6A46E /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		967575A43E66590EB61FCE07 /* Pods-Syncronice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Syncronice.debug.xcconfig"; path = "Target Support Files/Pods-Syncronice/Pods-Syncronice.debug.xcconfig"; sourceTree = "<group>"; };
 		A8A0797AC4C9A4A0F1D1E956 /* Pods-Syncronice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Syncronice.release.xcconfig"; path = "Target Support Files/Pods-Syncronice/Pods-Syncronice.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +166,16 @@
 		7B19232324E6856300BAC7BA /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				7B9CA9EF24E7C34F005768FE /* Timing0ms.m4a */,
+				7B9CA9ED24E7C34F005768FE /* Timing1ms.m4a */,
+				7B9CA9EB24E7C34F005768FE /* Timing2ms.m4a */,
+				7B9CA9E924E7C34E005768FE /* Timing5ms.m4a */,
+				7B9CA9EE24E7C34F005768FE /* Timing10ms.m4a */,
+				7B9CA9EC24E7C34F005768FE /* Timing20ms.m4a */,
+				7B9CA9F024E7C34F005768FE /* Timing50ms.m4a */,
+				7B9CA9EA24E7C34F005768FE /* Timing100ms.m4a */,
+				7B9CA9E724E75286005768FE /* 0ms.wav */,
+				7B9CA9E524E75273005768FE /* 1ms.wav */,
 				7B19232624E687E800BAC7BA /* 100ms.wav */,
 			);
 			path = Sounds;
@@ -220,8 +250,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B19232724E687E800BAC7BA /* 100ms.wav in Resources */,
+				7B9CA9F724E7C34F005768FE /* Timing0ms.m4a in Resources */,
+				7B9CA9F824E7C34F005768FE /* Timing50ms.m4a in Resources */,
+				7B9CA9E824E75286005768FE /* 0ms.wav in Resources */,
+				7B9CA9F624E7C34F005768FE /* Timing10ms.m4a in Resources */,
 				2B0876A424DA9F3A00F1B7B5 /* LaunchScreen.storyboard in Resources */,
 				2B0876A124DA9F3A00F1B7B5 /* Assets.xcassets in Resources */,
+				7B9CA9F524E7C34F005768FE /* Timing1ms.m4a in Resources */,
+				7B9CA9F424E7C34F005768FE /* Timing20ms.m4a in Resources */,
+				7B9CA9F124E7C34F005768FE /* Timing5ms.m4a in Resources */,
+				7B9CA9E624E75273005768FE /* 1ms.wav in Resources */,
+				7B9CA9F224E7C34F005768FE /* Timing100ms.m4a in Resources */,
+				7B9CA9F324E7C34F005768FE /* Timing2ms.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
