@@ -31,14 +31,21 @@ class TimingController: UIViewController {
         self.timingView.rentang10Button.addTarget(self, action: #selector(ButtonPressed10), for: .touchUpInside)
         self.timingView.rentang20Button.addTarget(self, action: #selector(ButtonPressed20), for: .touchUpInside)
         self.timingView.rentang50Button.addTarget(self, action: #selector(ButtonPressed50), for: .touchUpInside)
+        self.timingView.backButton.addTarget(self, action: #selector(ButtonPressed), for: .touchUpInside)
 
     }
+    @objc private func ButtonPressed(){
+           
+           self.dismiss(animated: true, completion: nil)
+           
+       }
     
     @objc private func ButtonPressed1(){
         
         self.number = 0
         let controller = PlayController()
         controller.number = self.number
+        controller.modalTransitionStyle = .crossDissolve
         controller.modalPresentationStyle = .fullScreen
         present(controller, animated: true, completion: nil)
         
@@ -49,6 +56,7 @@ class TimingController: UIViewController {
         self.number = 1
         let controller = PlayController()
         controller.number = self.number
+        controller.modalTransitionStyle = .crossDissolve
         controller.modalPresentationStyle = .fullScreen
         present(controller, animated: true, completion: nil)
         
@@ -59,6 +67,7 @@ class TimingController: UIViewController {
         self.number = 2
         let controller = PlayController()
         controller.number = self.number
+        controller.modalTransitionStyle = .crossDissolve
         controller.modalPresentationStyle = .fullScreen
         present(controller, animated: true, completion: nil)
         
@@ -69,6 +78,7 @@ class TimingController: UIViewController {
         self.number = 3
         let controller = PlayController()
         controller.number = self.number
+        controller.modalTransitionStyle = .crossDissolve
         controller.modalPresentationStyle = .fullScreen
         present(controller, animated: true, completion: nil)
         
@@ -79,6 +89,7 @@ class TimingController: UIViewController {
         self.number = 4
         let controller = PlayController()
         controller.number = self.number
+        controller.modalTransitionStyle = .crossDissolve
         controller.modalPresentationStyle = .fullScreen
         present(controller, animated: true, completion: nil)
         
@@ -89,6 +100,7 @@ class TimingController: UIViewController {
         self.number = 5
         let controller = PlayController()
         controller.number = self.number
+        controller.modalTransitionStyle = .crossDissolve
         controller.modalPresentationStyle = .fullScreen
         present(controller, animated: true, completion: nil)
         

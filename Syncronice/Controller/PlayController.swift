@@ -39,6 +39,7 @@ class PlayController: UIViewController {
     @objc private func ButtonPressed(){
         
         let controller = HomeController()
+        controller.modalTransitionStyle = .crossDissolve
         controller.modalPresentationStyle = .fullScreen
         present(controller, animated: true, completion: nil)
 

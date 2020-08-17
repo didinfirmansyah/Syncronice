@@ -10,15 +10,6 @@ import UIKit
 
 class SwipingController: UIViewController, UICollectionViewDataSource {
     
-//    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-//        collection.invalidateLayout()
-//
-//        let indexPath = IndexPath(item: indicator.currentPage, section: 0)
-//        DispatchQueue.main.async {
-//            self.collection.collectionView?.scrollToItem(at: indexPath, at: .centeredVertically, animated: true)
-//        }
-//
-//    }
     // array gambar
     let gambar = ["OnboardingIll","ill2"]
     // array text

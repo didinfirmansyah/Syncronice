@@ -62,6 +62,12 @@ class TimingView: UIView {
         return button
     }()
 
+    let backButton: UIButton = {
+        let button = UIButton()
+        button.setImage(UIImage(named: "Back"), for: .normal)
+        return button
+    }()
+    
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -71,7 +77,7 @@ class TimingView: UIView {
     }
     
     func setup(){
-        
+        self.addSubview(backButton)
         self.addSubview(titleText)
         self.addSubview(explanationText)
         self.addSubview(rentang1Button)
@@ -80,6 +86,10 @@ class TimingView: UIView {
         self.addSubview(rentang10Button)
         self.addSubview(rentang20Button)
         self.addSubview(rentang50Button)
+        self.backButton.snp.makeConstraints { (make) in
+                   make.top.equalTo(self).offset(50)
+                   make.leading.equalTo(self).offset(30)
+               }
         
         self.titleText.snp.makeConstraints { (make) in
             make.top.equalTo(self).offset(200)
