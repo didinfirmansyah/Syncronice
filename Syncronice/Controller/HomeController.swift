@@ -23,6 +23,8 @@ class HomeController: UIViewController {
         self.homeView.thirdButton.addTarget(self, action: #selector(ButtonPressed), for: .touchUpInside)
         
         self.homeView.instructionButton.addTarget(self, action: #selector(ButtonPressed2), for: .touchUpInside)
+        
+        self.homeView.container.addTarget(self, action: #selector(ButtonPressed3), for: .touchUpInside)
 
     }
     
@@ -41,7 +43,13 @@ class HomeController: UIViewController {
         controller.modalTransitionStyle = .crossDissolve
         present(controller, animated: true, completion: nil)
     }
-
-
+    
+    @objc private func ButtonPressed3(){
+        
+        let controller = HistoryController()
+        controller.modalPresentationStyle = .fullScreen
+        controller.modalTransitionStyle = .crossDissolve
+        present(controller, animated: true, completion: nil)
+    }
 
 }

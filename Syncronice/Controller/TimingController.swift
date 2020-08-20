@@ -34,11 +34,12 @@ class TimingController: UIViewController {
         self.timingView.backButton.addTarget(self, action: #selector(ButtonPressed), for: .touchUpInside)
 
     }
+    
     @objc private func ButtonPressed(){
-           
-           self.dismiss(animated: true, completion: nil)
-           
-       }
+
+        self.dismiss(animated: true, completion: nil)
+
+    }
     
     @objc private func ButtonPressed1(){
         

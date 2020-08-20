@@ -86,10 +86,11 @@ class TimingView: UIView {
         self.addSubview(rentang10Button)
         self.addSubview(rentang20Button)
         self.addSubview(rentang50Button)
+        
         self.backButton.snp.makeConstraints { (make) in
-                   make.top.equalTo(self).offset(50)
-                   make.leading.equalTo(self).offset(30)
-               }
+            make.top.equalTo(self).offset(50)
+            make.leading.equalTo(self).offset(30)
+        }
         
         self.titleText.snp.makeConstraints { (make) in
             make.top.equalTo(self).offset(200)

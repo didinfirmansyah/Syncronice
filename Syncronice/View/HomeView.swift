@@ -72,7 +72,7 @@ class HomeView: UIView {
     }()
     
     // container
-    let Container: UIButton = {
+    let container: UIButton = {
         let box = UIButton()
         box.setImage(UIImage(named: "History")?.withRenderingMode(.alwaysOriginal), for: .normal)
         return box
@@ -124,12 +124,12 @@ class HomeView: UIView {
         self.addSubview(titleText)
         self.addSubview(instructionButton)
         //history container
-        self.addSubview(Container)
+        self.addSubview(container)
         self.addSubview(Categories)
-        self.Container.addSubview(score)
-        self.Container.addSubview(score2)
-        self.Container.addSubview(score3)
-        self.Container.addSubview(score4)
+        self.container.addSubview(score)
+        self.container.addSubview(score2)
+        self.container.addSubview(score3)
+        self.container.addSubview(score4)
         self.addSubview(explanationText)
         self.addSubview(firstImage)
 //        self.addSubview(firstText)
@@ -156,33 +156,33 @@ class HomeView: UIView {
             make.leading.equalTo(self).offset(45)
         }
         // history Container
-        self.Container.snp.makeConstraints { (make) in
+        self.container.snp.makeConstraints { (make) in
             make.top.equalTo(self.explanationText.snp.bottom).offset(20)
             make.leading.equalTo(self).offset(20)
             make.trailing.equalTo(self).offset(-20)
         }
         // score label
         self.score.snp.makeConstraints { (make) in
-            make.leading.equalTo(self.Container).offset(80)
-            make.top.equalTo(self.Container).offset(80)
+            make.leading.equalTo(self.container).offset(80)
+            make.top.equalTo(self.container).offset(80)
         }
         // score label 2
         self.score2.snp.makeConstraints { (make) in
-            make.trailing.equalTo(self.Container).offset(-70)
-            make.top.equalTo(self.Container).offset(80)
+            make.trailing.equalTo(self.container).offset(-70)
+            make.top.equalTo(self.container).offset(80)
         }
         // score label 3
          self.score3.snp.makeConstraints { (make) in
-             make.leading.equalTo(self.Container).offset(85)
+             make.leading.equalTo(self.container).offset(85)
              make.top.equalTo(self.score).offset(30)
          }
         self.score4.snp.makeConstraints { (make) in
-            make.trailing.equalTo(self.Container).offset(-60)
+            make.trailing.equalTo(self.container).offset(-60)
             make.top.equalTo(self.score2).offset(30)
         }
         // categories label
         self.Categories.snp.makeConstraints { (make) in
-            make.top.equalTo(self.Container.snp.bottom).offset(20)
+            make.top.equalTo(self.container.snp.bottom).offset(20)
             make.leading.equalToSuperview().offset(40)
         }
 

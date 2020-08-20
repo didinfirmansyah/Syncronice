@@ -34,6 +34,9 @@
 		7B9CA9F624E7C34F005768FE /* Timing10ms.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7B9CA9EE24E7C34F005768FE /* Timing10ms.m4a */; };
 		7B9CA9F724E7C34F005768FE /* Timing0ms.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7B9CA9EF24E7C34F005768FE /* Timing0ms.m4a */; };
 		7B9CA9F824E7C34F005768FE /* Timing50ms.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7B9CA9F024E7C34F005768FE /* Timing50ms.m4a */; };
+		7B9CA9FC24ED581A005768FE /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9CA9FB24ED581A005768FE /* HistoryController.swift */; };
+		7B9CA9FE24ED5834005768FE /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9CA9FD24ED5834005768FE /* HistoryView.swift */; };
+		7B9CAA0024ED614A005768FE /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9CA9FF24ED614A005768FE /* HistoryTableViewCell.swift */; };
 		7BB1519924DD961900B6A46E /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB1519824DD961900B6A46E /* ViewController2.swift */; };
 		F232D01FD5D8AEFCD8FC1729 /* Pods_Syncronice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D3361867B0DB1CD1243873 /* Pods_Syncronice.framework */; };
 /* End PBXBuildFile section */
@@ -69,6 +72,9 @@
 		7B9CA9EE24E7C34F005768FE /* Timing10ms.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Timing10ms.m4a; sourceTree = "<group>"; };
 		7B9CA9EF24E7C34F005768FE /* Timing0ms.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Timing0ms.m4a; sourceTree = "<group>"; };
 		7B9CA9F024E7C34F005768FE /* Timing50ms.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Timing50ms.m4a; sourceTree = "<group>"; };
+		7B9CA9FB24ED581A005768FE /* HistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
+		7B9CA9FD24ED5834005768FE /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		7B9CA9FF24ED614A005768FE /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		7BB1519824DD961900B6A46E /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		967575A43E66590EB61FCE07 /* Pods-Syncronice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Syncronice.debug.xcconfig"; path = "Target Support Files/Pods-Syncronice/Pods-Syncronice.debug.xcconfig"; sourceTree = "<group>"; };
 		A8A0797AC4C9A4A0F1D1E956 /* Pods-Syncronice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Syncronice.release.xcconfig"; path = "Target Support Files/Pods-Syncronice/Pods-Syncronice.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +152,8 @@
 				7B19232124E644D100BAC7BA /* InstructionView.swift */,
 				7B19232A24E6981800BAC7BA /* TimingView.swift */,
 				7B19231A24E2B7D800BAC7BA /* PlayView.swift */,
+				7B9CA9FD24ED5834005768FE /* HistoryView.swift */,
+				7B9CA9FF24ED614A005768FE /* HistoryTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -159,6 +167,7 @@
 				7B19231F24E6445900BAC7BA /* InstructionController.swift */,
 				7B19232824E697F100BAC7BA /* TimingController.swift */,
 				7B19231824E1E76600BAC7BA /* PlayController.swift */,
+				7B9CA9FB24ED581A005768FE /* HistoryController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -314,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B9CAA0024ED614A005768FE /* HistoryTableViewCell.swift in Sources */,
 				7BB1519924DD961900B6A46E /* ViewController2.swift in Sources */,
 				7B19231924E1E76600BAC7BA /* PlayController.swift in Sources */,
 				7B19232224E644D100BAC7BA /* InstructionView.swift in Sources */,
@@ -322,12 +332,14 @@
 				7B19232024E6445900BAC7BA /* InstructionController.swift in Sources */,
 				2B08769924DA9F3800F1B7B5 /* ViewController.swift in Sources */,
 				7B19232B24E6981800BAC7BA /* TimingView.swift in Sources */,
+				7B9CA9FC24ED581A005768FE /* HistoryController.swift in Sources */,
 				7B19232924E697F100BAC7BA /* TimingController.swift in Sources */,
 				2B08769524DA9F3800F1B7B5 /* AppDelegate.swift in Sources */,
 				7B19231B24E2B7D800BAC7BA /* PlayView.swift in Sources */,
 				7B19231524E1981200BAC7BA /* HomeController.swift in Sources */,
 				2B3961F224E4F25B00528BC0 /* pageCell.swift in Sources */,
 				2B08769724DA9F3800F1B7B5 /* SceneDelegate.swift in Sources */,
+				7B9CA9FE24ED5834005768FE /* HistoryView.swift in Sources */,
 				2B3961F324E4F25B00528BC0 /* SwipingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
