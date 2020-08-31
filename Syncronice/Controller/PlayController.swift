@@ -18,6 +18,8 @@ class PlayController: UIViewController {
     var sound = ["Timing1ms", "Timing2ms", "Timing5ms", "Timing10ms", "Timing20ms", "Timing50ms"]
     
     var number : Int!
+    
+    var modelData : DataModel = DataModel(score: "", confidence: "")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +35,10 @@ class PlayController: UIViewController {
         self.playView.backButton.addTarget(self, action: #selector(ButtonPressed), for: .touchUpInside)
         
         self.playView.playButton.addTarget(self, action: #selector(ButtonPressed2), for: .touchUpInside)
+        
+        self.playView.syncButton.addTarget(self, action: #selector(ButtonPressed3), for: .touchUpInside)
+        
+        self.playView.delayButton.addTarget(self, action: #selector(ButtonPressed4), for: .touchUpInside)
 
     }
     
@@ -70,6 +76,32 @@ class PlayController: UIViewController {
         } catch let error {
             print(error.localizedDescription)
         }
+    }
+    
+    @objc private func ButtonPressed3(){
+        
+        modelData.score = "3/3"
+        modelData.confidence = "100 %"
+        let controller = DoneController()
+        controller.modelData2.score = self.modelData.score
+        controller.modelData2.confidence = self.modelData.confidence
+        controller.modalTransitionStyle = .crossDissolve
+        controller.modalPresentationStyle = .fullScreen
+        present(controller, animated: true, completion: nil)
+
+    }
+    
+    @objc private func ButtonPressed4(){
+        
+        modelData.score = "0/3"
+        modelData.confidence = "0 %"
+        let controller = DoneController()
+        controller.modelData2.score = self.modelData.score
+        controller.modelData2.confidence = self.modelData.confidence
+        controller.modalTransitionStyle = .crossDissolve
+        controller.modalPresentationStyle = .fullScreen
+        present(controller, animated: true, completion: nil)
+
     }
     
 }
