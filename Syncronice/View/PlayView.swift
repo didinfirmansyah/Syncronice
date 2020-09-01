@@ -44,6 +44,22 @@ class PlayView: UIView {
         button.setImage(UIImage(named: "Delay"), for: .normal)
         return button
     }()
+    
+    let testLabel: UILabel = {
+        let label = UILabel()
+        label.text = "TEST 1"
+        label.font = UIFont.systemFont(ofSize: 25)
+        label.textColor = UIColor.init(rgb: 0xFAFFF0)
+        return label
+    }()
+    
+    let resultLabel: UILabel = {
+        let label = UILabel()
+        label.text = ""
+        label.font = UIFont.systemFont(ofSize: 25)
+        label.textColor = UIColor.init(rgb: 0xFAFFF0)
+        return label
+    }()
 
 
     override init(frame: CGRect) {
@@ -60,6 +76,8 @@ class PlayView: UIView {
         self.addSubview(selectionText)
         self.addSubview(syncButton)
         self.addSubview(delayButton)
+        self.addSubview(testLabel)
+        self.addSubview(resultLabel)
         
         
         self.backButton.snp.makeConstraints { (make) in
@@ -86,6 +104,16 @@ class PlayView: UIView {
         self.delayButton.snp.makeConstraints { (make) in
             make.top.equalTo(self.selectionText.snp.bottom).offset(30)
             make.trailing.equalToSuperview().offset(-60)
+        }
+        
+        self.testLabel.snp.makeConstraints { (make) in
+            make.bottom.equalTo(self.playButton.snp.top).offset(-50)
+            make.centerX.equalTo(self)
+        }
+        
+        self.resultLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(self.syncButton.snp.bottom).offset(50)
+            make.centerX.equalTo(self)
         }
 
         
