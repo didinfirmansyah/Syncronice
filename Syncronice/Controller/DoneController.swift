@@ -12,7 +12,7 @@ class DoneController: UIViewController {
     
     private var doneView: DoneView!
     
-    var modelData2 : DataModel = DataModel(score: "", confidence: "")
+    var modelData2 : DataModel = DataModel(date: "", score: "", confidence: "")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,8 @@ class DoneController: UIViewController {
         self.doneView.confidenceLabel.text = self.modelData2.confidence
         
         let manager = CDManager()
-        manager.saveData(score: self.modelData2.score, confidence: self.modelData2.confidence)
+        manager.saveData(date: self.modelData2.date, score: self.modelData2.score, confidence: self.modelData2.confidence)
+        //print(manager.listData)
         
         self.doneView.backButton.addTarget(self, action: #selector(ButtonPressed), for: .touchUpInside)
         

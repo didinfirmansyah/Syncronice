@@ -19,7 +19,7 @@ class PlayController: UIViewController {
     
     var number : Int!
     
-    var modelData : DataModel = DataModel(score: "", confidence: "")
+    var modelData : DataModel = DataModel(date: "", score: "", confidence: "")
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,9 +80,13 @@ class PlayController: UIViewController {
     
     @objc private func ButtonPressed3(){
         
+        let setTime = DateFormatter()
+        setTime.dateFormat = "dd MMMM yyyy"
+        modelData.date = setTime.string(from: Date())
         modelData.score = "3/3"
         modelData.confidence = "100 %"
         let controller = DoneController()
+        controller.modelData2.date = self.modelData.date
         controller.modelData2.score = self.modelData.score
         controller.modelData2.confidence = self.modelData.confidence
         controller.modalTransitionStyle = .crossDissolve
@@ -93,9 +97,13 @@ class PlayController: UIViewController {
     
     @objc private func ButtonPressed4(){
         
+        let setTime = DateFormatter()
+        setTime.dateFormat = "dd MMMM yyyy"
+        modelData.date = setTime.string(from: Date())
         modelData.score = "0/3"
         modelData.confidence = "0 %"
         let controller = DoneController()
+        controller.modelData2.date = self.modelData.date
         controller.modelData2.score = self.modelData.score
         controller.modelData2.confidence = self.modelData.confidence
         controller.modalTransitionStyle = .crossDissolve

@@ -38,6 +38,7 @@ class HistoryController: UIViewController {
         let manager = CDManager()
         self.modelData3 = manager.listData
         self.historyView.historyTableView.reloadData()
+        //print(manager.listData)
         
         self.historyView.backButton.addTarget(self, action: #selector(ButtonPressed), for: .touchUpInside)
 
@@ -68,7 +69,7 @@ extension HistoryController: UITableViewDelegate, UITableViewDataSource {
 //        cell.historyCategory.text = varCategory[indexPath.row]
 //        cell.historyScoreContent.text = varScore[indexPath.row]
 //        cell.historyConfidenceContent.text = varConfidence[indexPath.row]
-        cell.historyDate.text = "31 August 2020"
+        cell.historyDate.text = modelData3[indexPath.row].date
         cell.historyImage.image = UIImage(named: "historyTiming")
         cell.historyCategory.text = "Timing"
         cell.historyScoreContent.text = modelData3[indexPath.row].score
