@@ -11,6 +11,12 @@ import SnapKit
 
 class HomeView: UIView {
     
+    let Scroll: UIScrollView = {
+        let scrollView = UIScrollView()
+        //scrollView.backgroundColor = .yellow
+        return scrollView
+    }()
+    
     let titleText: UILabel = {
         let label = UILabel()
         label.text = "Hello,"
@@ -121,45 +127,48 @@ class HomeView: UIView {
     
     func setup(){
         
-        self.addSubview(titleText)
-        self.addSubview(instructionButton)
+        self.addSubview(Scroll)
+        self.Scroll.addSubview(titleText)
+        self.Scroll.addSubview(instructionButton)
         //history container
-        self.addSubview(container)
-        self.addSubview(Categories)
+        self.Scroll.addSubview(container)
+        self.Scroll.addSubview(Categories)
         self.container.addSubview(score)
         self.container.addSubview(score2)
         self.container.addSubview(score3)
         self.container.addSubview(score4)
-        self.addSubview(explanationText)
-        self.addSubview(firstImage)
+        self.Scroll.addSubview(explanationText)
+        self.Scroll.addSubview(firstImage)
 //        self.addSubview(firstText)
-        self.addSubview(secondImage)
+        self.Scroll.addSubview(secondImage)
 //        self.addSubview(secondText)
-        self.addSubview(thirdButton)
+        self.Scroll.addSubview(thirdButton)
 //        self.addSubview(thirdText)
-        self.addSubview(fourthImage)
+        self.Scroll.addSubview(fourthImage)
 //        self.addSubview(fourthText)
 
-
+        self.Scroll.snp.makeConstraints { (make) in
+            make.top.left.right.bottom.equalTo(self)
+        }
         
         self.titleText.snp.makeConstraints { (make) in
-            make.top.equalTo(safeAreaLayoutGuide).offset(30)
-            make.leading.equalTo(self).offset(45)
+            make.top.equalTo(self.Scroll).offset(30)
+            make.leading.equalTo(self.Scroll).offset(45)
         }
         //history
         self.instructionButton.snp.makeConstraints { (make) in
-            make.top.equalTo(safeAreaLayoutGuide).offset(30)
-            make.trailing.equalTo(self).offset(-30)
+            make.top.equalTo(self.Scroll).offset(30)
+            make.trailing.equalTo(self.Scroll).offset(-30)
         }
         self.explanationText.snp.makeConstraints { (make) in
             make.top.equalTo(self.titleText.snp.bottom).offset(10)
-            make.leading.equalTo(self).offset(45)
+            make.leading.equalTo(self.Scroll).offset(45)
         }
         // history Container
         self.container.snp.makeConstraints { (make) in
             make.top.equalTo(self.explanationText.snp.bottom).offset(20)
-            make.leading.equalTo(self).offset(20)
-            make.trailing.equalTo(self).offset(-20)
+            make.leading.equalTo(self.Scroll).offset(20)
+            make.trailing.equalTo(self.Scroll).offset(-20)
         }
         // score label
         self.score.snp.makeConstraints { (make) in
@@ -188,29 +197,30 @@ class HomeView: UIView {
 
         self.firstImage.snp.makeConstraints { (make) in
             make.top.equalTo(self.Categories.snp.bottom).offset(-5)
-            make.leading.equalTo(self).offset(20)
+            make.leading.equalTo(self.Scroll).offset(20)
         }
         
         
         self.secondImage.snp.makeConstraints { (make) in
             make.top.equalTo(self.Categories.snp.bottom).offset(-5)
-            make.trailing.equalTo(self).offset(-20)
+            make.trailing.equalTo(self.Scroll).offset(-20)
         }
         
         self.thirdButton.snp.makeConstraints { (make) in
             make.top.equalTo(self.firstImage.snp.bottom).offset(10)
-            make.leading.equalTo(self).offset(20)
+            make.leading.equalTo(self.Scroll).offset(20)
         }
 
         
         self.fourthImage.snp.makeConstraints { (make) in
             make.top.equalTo(self.secondImage.snp.bottom).offset(10)
-            make.trailing.equalTo(self).offset(-20)
+            make.trailing.equalTo(self.Scroll).offset(-20)
+            make.bottom.equalTo(self.Scroll).offset(-20)
         }
         
 //        self.fourthText.snp.makeConstraints { (make) in
 //            make.top.equalTo(self.fourthImage.snp.bottom).offset(0)
-//            make.trailing.equalTo(self).offset(-90)
+//            make.trailing.equalTo(self.Scroll).offset(-90)
 //        }
         
     }
